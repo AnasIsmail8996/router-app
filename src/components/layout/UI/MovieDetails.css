@@ -1,0 +1,57 @@
+.details-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .details-card {
+    flex-direction: row;
+  }
+}
+
+.details-poster {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.details-info {
+  flex: 1;
+  padding-left: 1rem;
+}
+
+.details-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.details-info p {
+  margin: 0.3rem 0;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.watch-button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.watch-button:hover {
+  background-color: #e03e00;
+}

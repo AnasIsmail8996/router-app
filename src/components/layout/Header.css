@@ -1,0 +1,93 @@
+/* Header.css */
+
+.header {
+  background-color: #121212;
+  color: #ffffff;
+  border-bottom: 1px solid #333;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.header-top .logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.header-top .auth-buttons a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 12px;
+  font-size: 0.875rem;
+  border-radius: 4px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.header-top .auth-buttons a:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+.navbar-custom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-toggler {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #fff;
+}
+
+/* Responsive - Show hamburger menu */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+}
